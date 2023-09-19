@@ -30,3 +30,11 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 
 import snowflake.connector
+[snowflake]
+user = "bwright"
+password = "@WSX2wsx"
+account = "org_id-acct_id" <--Replace this with your Account info - and delete this comment
+warehouse = "pc_rivery_wh" 
+database = "pc_rivery_db" 
+schema = "public"
+role = "pc_rivery_role"

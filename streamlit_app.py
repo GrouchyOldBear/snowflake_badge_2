@@ -30,14 +30,6 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 
 import snowflake.connector
-[snowflake]
-user = "bwright"
-password = "@WSX2wsx"
-account = "YCVCXPL-OU14704"
-warehouse = "pc_rivery_wh" 
-database = "pc_rivery_db" 
-schema = "public"
-role = "pc_rivery_role"
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")

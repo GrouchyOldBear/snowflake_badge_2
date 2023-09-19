@@ -33,7 +33,7 @@ import snowflake.connector
 [snowflake]
 user = "bwright"
 password = "@WSX2wsx"
-account = "org_id-acct_id" <--Replace this with your Account info - and delete this comment
+account = "YCVCXPL.OU14704"
 warehouse = "pc_rivery_wh" 
 database = "pc_rivery_db" 
 schema = "public"

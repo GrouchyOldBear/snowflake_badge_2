@@ -1,7 +1,3 @@
 # requirements.txt
-altair
-pandas
-streamlit
-snowflake
-charset-normalizer==2.0.12
+streamlit==1.11.0 -r https://raw.githubusercontent.com/snowflakedb/snowflake-connector-python/main/tested_requirements/requirements_39.reqs
 snowflake-connector-python==2.7.9

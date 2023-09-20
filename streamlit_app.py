@@ -19,6 +19,8 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Avocado', 'Strawberries'])
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
+streamlit.stop()
+
 streamlit.dataframe(fruits_to_show)
  
 def get_fruitvice_data(this_fruit_choice):
@@ -36,7 +38,6 @@ try:
 except URLError as e:
      streamlit.error
 # dont run anything past this
-streamlit.stop()
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()

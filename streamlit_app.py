@@ -48,7 +48,7 @@ if streamlit.button('get_fruit_load_list'):
    my_data_rows = get_fruit_load_list()
    streamlit.dataframe(my_data_rows)
 
-streamlit.write('Thanks for adding ', fruits_to_show)
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+# streamlit.write('Thanks for adding ', fruits_to_show)
+# my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
-streamlit.stop() 
+# streamlit.stop() 
